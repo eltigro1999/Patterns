@@ -8,7 +8,7 @@ bool Vehicle::IsReadyToRide() {
 }
 
 void Vehicle::BoardPassenger() {
-	int randomAmountOfPassengers = rand() % 31;
+	int randomAmountOfPassengers = rand() % (PassengersLimit+1);
 	for (int NumberOfPassenger = 0; NumberOfPassenger < randomAmountOfPassengers; ++NumberOfPassenger) {
 		std::shared_ptr<Passenger> passenger(new Passenger);
 		Passengers.push_back(std::move(passenger));

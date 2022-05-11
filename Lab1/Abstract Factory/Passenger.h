@@ -5,5 +5,5 @@ class Passenger {
 	std::string Name;
 public:
 	std::string GetName();
-	~Passenger();
+	//~Passenger();
 };
